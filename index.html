@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main_section">
+        <header class="title">
+            <h1>Hey!</h1>
+            <h3>Let's try to find a joke for you</h3>
+        </header>
+        <section class="search">
+            <div>
+                <input type="radio" id="randomSearch" name="searchList" value="Random">
+                <label for="randomSearch" class="radioButton">Random</label>
+                <div class="check"></div>
+            </div>
+            <div>
+                <input type="radio" id="categoriesSearch" name="searchList" value="Categories">
+                <label for="categoriesSearch" class="radioButton">From categories</label>
+                <div class="check"></div>
+                <div class="categories" id="categories"></div>
+            </div>
+            <div>
+                <input type="radio" id="searchSearch" name="searchList" value="Search">
+                <label for="searchSearch" class="radioButton">Search</label>
+                <div class="check"></div>
+                <div class="search_input_container" id="searchInputContainer"></div>
+            </div>
+        </section>
+        <button id="getJoke">Get a joke</button>
+        <div id="jokes"></div>
+    </div>
+    <input type="checkbox" id="toggle">
+    <div class="favourite_section">
+        <div class="liked" id="favourite"></div>
+    </div>
+    <div class="toggler">
+        <label for="toggle" class="toggle">
+            <div class="toggle_circle"></div>
+        </label>
+        <h2>Favourive</h2>
+    </div>
+
+    <script src="constans.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
